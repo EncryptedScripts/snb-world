@@ -11,8 +11,8 @@
 </head>
 <body class="pt-[101.2px] sm:pt-[96px]">
   <div id="nav-wrp" class="">
-    <header id="navbar" class="bg-white  fixed flex items-center justify-center flex-col m-0 p-0 inset-x-0 top-0 z-50">
-      <div id="top-nav" class=" w-full flex items-center justify-between sm:justify-between pt-5 pb-5  sm:pt-4 sm:pb-0 px-2 sm:px-5 "  >
+    <header id="navbar" class="bg-white  fixed flex flex-col items-center justify-center  m-0 p-0 inset-x-0 top-0 z-50">
+      <div id="top-nav" class=" w-full flex items-center justify-between sm:justify-between py-5  sm:py-4  px-2 sm:px-5 "  >
         <div id="left-part" class="sm:w-1/3 flex justify-start flex-row lg:flex-1">
           <div id="button" class="hidden sm:flex flex-row items-center justify-start lg:flex-1">
             <div id="srvc-button" class="flex">
@@ -57,43 +57,34 @@
         <!-- End of Mobile div-->
 
       </div>
-      <div id="bot-nav" class="w-full flex items-center justify-center pt-2 pb-4 sm:px-[20px]">
-        <div id="srch-bar" class=" relative flex sm:hidden w-full sm:w-auto px-[10px] rounded-full items-center hover:bg-slate-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-700">
-          <span class="sr-only">Search</span>
-          <span id="srch-icon" class="absolute left-0 flex items-center pl-5">
-            <svg class="h-5 w-5 fill-black" data-slot="icon" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path clip-rule="evenodd" fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"></path>
-            </svg>
-          </span>
-          <input id="srch-input" class="font-saira items-center placeholder:italic placeholder:text-gray-600 block bg-white w-full border-2 border-black rounded-xl py-[1px] pr-3 md:pl-7 shadow-sm focus:outline-none focus:border-black focus:ring-black focus:ring-1 text-sm  pl-6" placeholder="Search..." type="text" name="search"/>
-        </div>
-        <div id="ctg" class="w-full hidden sm:flex flex-row items-center justify-center text-black font-saira text-[15px]">
-          <a href="#" class="flex flex-row leading-6 items-center ">PAKAIAN & AKSESORIS</a>
-          <h1 id="divider" class="flex font-saira mx-3 items-center justify-center text-sm">|</h1>
-          <a href="#" class="flex flex-row leading-6 items-center ">OTOMOTIF</a>
-          <h1 id="divider" class="flex mx-3 items-center text-sm">|</h1>
-          <a href="#" class="flex leading-6 items-center ">ELEKTRONIK</a>
-          <h1 id="divider" class="flex mx-3 items-center text-l">|</h1>
-          <a href="#" class="hidden sm:flex leading-6 items-center ">PROPERTI</a>
-          <h1 id="divider" class="flex mx-3 items-center text-sm">|</h1>
-          <a href="#" class="flex leading-6 items-center ">PERALATAN RUMAH TANGGA</a>
-          <h1 id="divider" class="flex mx-3 items-center text-sm">|</h1>
-          <a href="#" class="flex leading-6 items-center ">LAINNYA</a>
-        </div>
-      </div>
     </header>
   </div>
   
-    <div id="content" class="w-full flex align-middle  pt-10 pb-40 ">
-      <section class="container flex flex-row">
-        <div id="product-pictures" class="w-full flex"> 
-          <div class="w-fit grid grid-rows-4 gap-3"> 
-            <img src="../images/market-images/shirt.png" alt="product" class="aspect-[1/1] w-[100px]">
-            <img src="../images/market-images/shirt.png" alt="product" class="aspect-[1/1] w-[100px]">
-            <img src="../images/market-images/shirt.png" alt="product" class="aspect-[1/1] w-[100px]">
-            <img src="../images/market-images/shirt.png" alt="product" class="aspect-[1/1] w-[100px]">
+    <div id="content" class="w-full flex align-middle left-0 right0 mx-auto pb-40 px-8 pt-4 ">
+      <section class=" w-full grid grid-cols-2 gap-[1.5px] bg-black ">
+        <div id="product-pictures" class="flex justify-end pr-16 px-auto bg-white"> 
+          <div class="flex flex-col gap-4 mr-6"> 
+            <img src="../images/market-images/shirt2.png" alt="product" class="aspect-square w-[150px] object-cover">
+            <img src="../images/market-images/shirt3.png" alt="product" class="aspect-square w-[150px] object-cover">
           </div>
-          <img src="../images/market-images/jam-tangan.png" alt="product" class="aspect-[1/1] w- object-cover">
+          <div id="main-picture">
+            <img src="../images/market-images/shirt.png" alt="product" class="aspect-[4/5] w-[500px] object-cover">
+          </div>
+        </div>
+        <div id="desc" class="pl-16 bg-white">
+          <header class="flex">
+            <h2 class="text-xl font-bold text-gray-900 sm:text-5xl flex border-b-2 border-black pb-2">Polo Hitam</h2>
+          </header>
+
+          <div id="pd-caption" class="flex flex-col pt-5 gap-5">
+            <div id="harga" class="flex text-2xl font-bold text-gray-900 sm:text-4xl">
+              <span class="sr-only"> Regular Price</span> 
+              <span class="flex tracking-wider text-gray-900"> Rp. 100.000</span>
+            </div>
+            <div id="pd-desc">
+              <p class="text-gray-900 text-lg sm:text-2xl text-justify">Polo Hitam adalah pakaian yang cocok untuk acara formal maupun non-formal. Polo ini terbuat dari bahan yang nyaman dan tidak mudah kusut. Polo ini tersedia dalam berbagai ukuran.</p>
+            </div>
+          </div>
         </div>
       </section>
     </div> 
