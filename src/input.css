@@ -10,7 +10,7 @@
 
 @layer components {
     .caption {
-      @apply w-[100px]  sm:w-[500px] h-[25px] sm:h-auto py-[5px] sm:py-[20px] px-[20px] absolute flex flex-col items-center left-0 right-0 bottom-[10%] mt-[100%] mx-auto rounded-md sm:rounded-3xl bg-black font-saira text-white  hover:bg-gray-400 hover:text-white;
+      @apply w-[100px]  sm:min-w-[250px] sm:w-fit h-[25px] sm:h-auto py-[5px] sm:py-[20px] px-[20px] absolute flex flex-col items-center left-0 right-0 bottom-[10%] mt-[100%] mx-auto rounded-md sm:rounded-3xl bg-black font-saira text-white  hover:bg-gray-400 hover:text-black;
     }
 
     .title-h1 {
@@ -40,7 +40,7 @@
     }
 
     .card-title {
-        @apply text-lg sm:text-xl font-semibold text-gray-900 group-hover:underline group-hover:underline-offset-4;
+        @apply pr-2 text-lg sm:text-xl font-semibold text-gray-900 group-hover:underline group-hover:underline-offset-4 flex w-2/3 overflow-hidden whitespace-nowrap text-ellipsis;
     }
 
     .pf-row{
@@ -50,4 +50,13 @@
     .pf-row-box{
         @apply w-full mx-4 placeholder:text-black placeholder:italic border border-black rounded-lg py-1 px-2  focus:outline-none focus:ring-0 sm:text-xl;
     }
+
+    .cart-title {
+        @apply mt-0.5 space-y-px text-2xl text-black;
+    }
+
+    .cart-desc {
+        @apply mt-0.5 space-y-px text-2xl text-grey-500;
+    }
+    
   }
